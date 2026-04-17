@@ -330,7 +330,12 @@
     /* ─────────────────────────────────────────
        GALLERY
     ───────────────────────────────────────── */
-    #gallery { background i; }
+    #gallery { background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(img12.jpeg),
+        linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(img12.jpeg);
+        background-repeat: no-repeat; 
+        background-size: 100% 50%,100% 50%,100% 50%,100% 50%;
+        background-position: top center,top center,bottom center,bottom center;
+    }
 
     .gallery-grid {
       display: grid;
@@ -965,6 +970,7 @@
   <!-- ═══════════════════════════════════════════
        PHOTO GALLERY
   ═══════════════════════════════════════════ -->
+  <section class="bg">
   <section id="gallery" aria-label="Photo gallery">
     <p class="section-label reveal">Our Story</p>
     <h2 class="section-title reveal">Captured Moments</h2>
@@ -1076,6 +1082,7 @@
     </div>
 
     </div>
+  </section>
   </section>
 
   <!-- ═══════════════════════════════════════════
