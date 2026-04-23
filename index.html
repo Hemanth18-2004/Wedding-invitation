@@ -10,7 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Great+Vibes&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Allura&display=swap" rel="stylesheet">
+  
   <!-- ═══════════════════════════════════════════
        STYLES
   ═══════════════════════════════════════════ -->
@@ -157,25 +158,15 @@
       transform: translateY(20px);
       animation: fadeUp 0.9s 0.3s forwards;
     }
-
     .hero-script {
-      font-family: var(--font-script);
-      font-size: clamp(72px, 14vw, 140px);
-      color: #fff;
-      line-height: 1;
-      text-shadow: 0 4px 40px rgba(0,0,0,0.3);
-      opacity: 0;
-      transform: translateY(24px);
-      animation: fadeUp 1s 0.6s forwards;
-    }
-
-    .hero-ampersand {
-      color: var(--gold);
-      font-size: clamp(54px, 10vw, 100px);
-      display: block;
-      margin: -8px 0;
-    }
-
+      font-weight: 1000;
+      text-transform: uppercase; /* optional luxury style */
+      font-size: clamp(60px, 4vw, 100px);
+  }
+  .hero-ampersand {
+    font-family: 'Allura', cursive;
+    letter-spacing: normal;
+  }
     .hero-date-badge {
       margin-top: 36px;
       display: inline-flex;
@@ -842,6 +833,14 @@
 
       .hero-date-badge .line { width: 30px; }
     }
+    
+      .story-container {
+        font-family: var(--font-serif);
+        font-size: 20px;
+        line-height: 1.9;
+        max-width: 700px;
+        margin: 0 auto;
+    }
   </style>
 </head>
 <body>
@@ -909,7 +908,46 @@
     
 
   </section>
+</section>  <!-- countdown ends -->
 
+<!-- 💖 LOVE STORY SECTION START -->
+<section id="love-story">
+  <p class="section-label">Our Journey</p>
+  <h2 class="section-title">The Story</h2>
+
+  <div class="section-divider">
+    <div class="rule"></div>
+    <div class="diamond"></div>
+    <div class="rule"></div>
+  </div>
+
+  <!-- ❤️ HEART LINE HERE -->
+  <div class="heart-line">
+    <span class="line"></span>
+    <span class="heart">❤</span>
+    <span class="line"></span>
+  </div>
+
+  <div class="story-container">
+    
+  <p class="reveal-left">
+  The journey began with a traditional meeting, where Niranjan first went to see Chandana.
+  What started as a simple introduction soon sparked a quiet connection.
+  </p>
+
+  <p class="reveal-right">
+  As their families met and spent time together, both Niranjan and Chandana found comfort in each other’s presence.
+  With mutual understanding and respect, their hearts gently aligned.
+  </p>
+
+  <p class="reveal-left">
+  With the blessings of their families and a shared happiness, what began as a meeting soon turned into a beautiful promise —
+  a journey towards marriage and a lifetime of togetherness.
+  </p>
+
+  </div>
+</section>
+<!-- 💖 LOVE STORY SECTION END -->
   <!-- ═══════════════════════════════════════════
        COUNTDOWN TIMER
   ═══════════════════════════════════════════ -->
