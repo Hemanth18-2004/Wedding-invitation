@@ -321,7 +321,7 @@
     /* ─────────────────────────────────────────
        GALLERY
     ───────────────────────────────────────── */
-    #gallery { background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(wedding/img12.jpeg),
+    #gallery { background-image: linear-gradient(rgba(192, 25, 25, 0.5), rgba(255,255,255,0.5)), url(wedding/img12.jpeg),
         linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url(wedding/img12.jpeg);
         background-repeat: no-repeat; 
         background-size: 100% 50%,100% 50%,100% 50%,100% 50%;
@@ -526,13 +526,17 @@
       margin-bottom: 8px;
     }
 
-    .details-value {
-      font-family: var(--font-serif);
-      font-size: clamp(22px, 4vw, 32px);
-      color: var(--charcoal);
-      line-height: 1.3;
-      font-style: italic;
-    }
+   .details-value {
+    font-family: var(--font-serif);
+    font-size: clamp(22px, 4vw, 32px);
+    color: var(--charcoal);
+    line-height: 1.3;
+    font-style: italic;
+
+    /* ✅ ADD THIS */
+    word-break: break-word;
+    overflow-wrap: break-word;
+  }
 
     .details-sub {
       font-family: var(--font-sans);
@@ -794,6 +798,9 @@
       .details-wrapper {
         grid-template-columns: 1fr;
         max-width: 400px;
+      }
+      .details-card {
+        width: 100%;  
       }
 
       .details-divider { display: none; }
@@ -1165,7 +1172,7 @@
         <p class="details-sub">Ceremony begins</p>
       </div>
 
-      <div class="details-card reveal" style="grid-column: 1;">
+      <div class="details-card reveal">
         <span class="details-icon" aria-hidden="true">🏛️</span>
         <p class="details-label">Venue</p>
         <p class="details-value">Rajendra Kalamandhira</p>
@@ -1174,7 +1181,7 @@
 
       <div class="details-divider reveal" aria-hidden="true"></div>
 
-      <div class="details-card reveal" style="grid-column: 3;">
+      <div class="details-card reveal">
         <span class="details-icon" aria-hidden="true">📍</span>
         <p class="details-label">Address</p>
         <p class="details-value">J.S.S.Hospital,JSS Hobli Road,Ramanuja Rd,Ramachandra Agrahara</p>
